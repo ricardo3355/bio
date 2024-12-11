@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:: Experiências :: </title>
-    <link rel="icon" type="image/png" sizes="32x32" href="media/experiencia.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos - Ricardo Souza</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="media/experiencia.png">
+  <style>
+    /* Estilos globais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+    td {
+      text-align: center;
+      padding: 7px 0;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: bold;
+      border-right: 1px solid white; /* Borda branca fina */
+    }
+    td:last-child {
+      border-right: none; /* Remove a borda na última célula */
+    }
+    td a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      padding: 10px 20px;
+      background: radial-gradient(circle, #007BFF, #0056b3);
+    }
+    td a:hover {
+      background: radial-gradient(circle, #0056b3, #007BFF);
+    }
+    /* Botão "clicado" */
+    #sobre-mim a {
+      background: radial-gradient(circle, #0056b3, #003f7f);
+      box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+       /* Estilo do parágrafo */
+       p {
+      margin: 20px auto;
+      font-size: 18px;
+      max-width: 900px;
+      line-height: 1;
+      text-align: justify; /* Alinhamento justificado */
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    
+  <!-- Tabela do topo -->
+  <table>
+    <tr>
+      <td id="sobre-mim"><a href="sobre-mim.html">SOBRE MIM</a></td>
+      <td><a href="formacao.html">FORMAÇÃO</a></td>
+      <td><a href="projetos.html">PROJETOS</a></td>
+      <td><a href="contato.html">CONTATO</a></td>
+    </tr>
+  </table>
+
+  <h2>PROJETOS PESSOAIS</h2>
+  <h4>Alguns projetos desenvolvidos</h4>
+  <p>
+    Ao longo da graduação em Banco de Dados da UNINTER, foi possível explorar diversos projetos e colocar a mão na massa
+    em códigos práticos.
+    Foram desenvolvidos projetos em PYTHON, JAVA, HTML
+  </p>
+  <h4>Pesquisa e Desenvolvimento</h4>
+  <p>
+    Na Atividade Extensionista, realizei toda coleta e modelagem do banco de dados para uma aplicação web.
+    O Projeto "Vacina Conecta" cruza informações de cadastro pessoal, como idade, sexo, grupo de risco, localidade, entre
+    outras informações para trazer um mapa de vacinas por região.
+    Sendo possível analisar as vacinas já aplicadas e o calendário oficial local. 
+    Além de campanhas específicas por regiões.
+
+    Com todos os dados no sistema é de facil análise demografica onde podemos filtrar as vacinas por diversos fatores.
+  </p>
+
+  <br><br>
+
+  <!-- Rodapé -->
+  <footer>
+    &copy; Todos os direitos reservados
+  </footer>
 </body>
 </html>

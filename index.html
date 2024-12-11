@@ -3,10 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>:: Homepage :: </title>
+  <title>Sobre Mim - Ricardo Souza</title>
   <link rel="icon" type="image/png" sizes="32x32" href="media/homepage.png">
+  <style>
+    /* Estilos globais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+    td {
+      text-align: center;
+      padding: 7px 0;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: bold;
+      border-right: 1px solid white; /* Borda branca fina */
+    }
+    td:last-child {
+      border-right: none; /* Remove a borda na última célula */
+    }
+    td a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      padding: 10px 20px;
+      background: radial-gradient(circle, #007BFF, #0056b3);
+    }
+    td a:hover {
+      background: radial-gradient(circle, #0056b3, #007BFF);
+    }
+    /* Botão "clicado" */
+    #sobre-mim a {
+      background: radial-gradient(circle, #0056b3, #003f7f);
+      box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+       /* Estilo do parágrafo */
+       p {
+      margin: 20px auto;
+      font-size: 18px;
+      max-width: 900px;
+      line-height: 1;
+      text-align: justify; /* Alinhamento justificado */
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <h2>Aqui Trago um breve resumo sobre quem é Ricardo Souza</h2>
+  <!-- Tabela do topo -->
+  <table>
+    <tr>
+      <td id="sobre-mim"><a href="sobre-mim.html">SOBRE MIM</a></td>
+      <td><a href="formacao.html">FORMAÇÃO</a></td>
+      <td><a href="projetos.html">PROJETOS</a></td>
+      <td><a href="contato.html">CONTATO</a></td>
+    </tr>
+  </table>
+
+  <h2>Quem é Ricardo Souza?</h2>
+  <h4>Introdução</h4>
+  <p>
+    Nascido na Baixada Santista, litoral de São Paulo, sou um caiçara que, desde pequeno, apresentou uma paixão pela 
+    tecnologia. Com recursos mais modestos e numa época em que a tecnologia não era tão acessível como nos dias de hoje, 
+    manter-se atualizado no mundo tecnológico era uma tarefa árdua.
+    Lembro-me de, toda segunda-feira, folhear os cadernos de tecnologia dos jornais de circulação e comprar revistas com 
+    as novidades da área. Contudo, acredito que o ponto decisivo para minha trajetória foi ao assistir a um filme de 
+    super-herói em que conheci a inteligência artificial JARVIS, do personagem fictício Tony Stark. 
+    Esse sistema controlava toda a casa, as armas e a armadura recheada de tecnologia de ponta. 
+    Tudo isso me deixou fascinado e, desde então, mergulhei cada vez mais nesse universo.
+  </p>
+  <h4>Trajetória Profissional</h4>
+  <p>
+    Atualmente, acumulo mais de 10 anos de experiência na área de logística e transportes. No entanto, estou em transição 
+    para o mundo dos Dados. Para tornar essa mudança possível, venho me aperfeiçoando intensamente, construindo uma 
+    sólida base de conhecimento.
+    Sou um entusiasta da tecnologia e extremamente curioso, sempre buscando me manter atualizado e conectado ao mercado. 
+    Minha paixão por aprender e me adaptar às novas ferramentas e metodologias motiva-me a enfrentar os desafios desse 
+    fascinante mundo dos Dados.
+  </p>
+
+  <br><br>
+
+  <!-- Rodapé -->
+  <footer>
+    &copy; Todos os direitos reservados
+  </footer>
 </body>
 </html>
