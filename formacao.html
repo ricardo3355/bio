@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formação - Ricardo Souza</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="media/formacao.png">
+  <title>Formação - Ricardo Souza</title>      <!-- padronizei todas as páginas com o nome da pagina seguida da bio -->
+  <link rel="icon" type="image/png" sizes="32x32" href="media/formacao.png">      <!-- pgn do favicon da pagina -->
   <style>
-    /* Estilos globais */
+    /* CSS interno vai facilitar neste primeiro momento a ambientação com as modificações */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -15,7 +15,7 @@
       color: #333;
       text-align: center;
     }
-    table {
+    table { /* estilo CSS das tabelas de fixas do cabeçalho */
       width: 100%;
       border-collapse: collapse;
       margin: 0;
@@ -29,25 +29,25 @@
       border-right: 1px solid white; /* Borda branca fina */
     }
     td:last-child {
-      border-right: none; /* Remove a borda na última célula */
+      border-right: none;  /* Remove a borda na última célula, criando a separação somente entre os botões */
     }
-    td a {
+    td a {  /* formatação padrão para as celulas do menu fixo superior */
       text-decoration: none;
       color: white;
       display: block;
       padding: 10px 20px;
       background: radial-gradient(circle, #007BFF, #0056b3);
     }
-    td a:hover {
+    td a:hover {  /* "Botão selecionado" - ao passar o mouse cria-se um efeito de destaque, indicando ação */
       background: radial-gradient(circle, #0056b3, #007BFF);
     }
-    /* Botão "clicado" */
-    #formacao a {
+
+    #formacao a {  /* Botão "clicado" - cada página aberta indicará com uma cor diferente no menu qual sessão atual. */
       background: radial-gradient(circle, #0056b3, #003f7f);
       box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
-       /* Estilo do parágrafo */
-       p {
+
+       p {  /* formatação padrão para todos os parafragos, se preciso será inserido um CSS imbutido */
       margin: 20px auto;
       font-size: 18px;
       max-width: 900px;
@@ -55,14 +55,36 @@
       text-align: center; /* Alinhamento justificado */
     }
 
-    /* Rodapé */
-    footer {
+
+    footer {     /* Rodapé em todas as páginas com copyright */
       background-color: #333;
       color: white;
       padding: 10px 0;
       margin-top: 20px;
       font-size: 14px;
     }
+    h2 {
+      font-size: 36px; /* Ajuste para um tamanho maior */
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      color: #333;
+      text-align: center;
+    }
+
+    h2::before { /* nos títulos h2 será aplicado um destaque 'estilo marca texto' */
+      content: '';
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      bottom: 1px;
+      top: -5px;
+      z-index: -1;
+      background: radial-gradient(circle, rgba(123, 153, 223, 0.74) 50%, transparent 130%);
+      filter: blur(3px);
+      transform: scale(1.05);
+    }
+
   </style>
 </head>
 <body>
@@ -71,16 +93,21 @@
     <tr> 
       <td><a href="index.html">SOBRE MIM</a></td>                   <!-- cada botão leva para a página específica    -->
       <td id="formacao"><a href="formacao.html">FORMAÇÃO</a></td>   <!-- não existe botão 'voltar' toda pagina,      -->
-      <td><a href="projetos.html">PROJETOS</a></td>                 <!-- funciona de forma direta e de forma simples -->
+      <td><a href="projetos.html">PORTFÓLIO</a></td>                 <!-- funciona de forma direta e de forma simples -->
       <td><a href="contato.html">CONTATO</a></td>
     </tr>
   </table>
 
-  <h2>Estamos em atualização</h2>
-  <h4>Volte mais tarde...</h4>
-  <p>
-    Logo mais teremos novidades aqui pequeno gafanhoto !!!
-  </p>
+  <h2>Formação Acadêmica</h2>
+<p style="text-align: center;">Tecnólogo em Banco de Dados - UNINTER (agosto/2026)</p>
+<p style="text-align: center;">Técnico Profissionalizante - Centro de Formação Profissional CAMP – Guarujá (dezembro/2005)</p>
+
+<h2>Cursos e Treinamentos</h2> <!-- até iria usar uma lista não ordenada, mas como são poucos tópicos ficou melhor em paragrafo-->
+<p style="text-align: center;">Engenharia de Dados com Python e Power BI (Bootcamp NTT DIO - 2024)</p>
+<p style="text-align: center;">Lógica de Programação e Algoritmos (Bootcamp iFood DIO - 2023)</p>
+<p style="text-align: center;">Conceitos Básicos de SAP e S4Hana (KA Solutions - 2023)</p>
+<p style="text-align: center;">Excel do Básico ao Avançado (Ninja Excel - 2022)</p>
+<p style="text-align: center;">Proficiência Básica em Inglês (Conversação, Leitura e Escrita)</p>
 
   <br><br>
 

@@ -1,64 +1,48 @@
-Portfólio Pessoal em HTML + CSS
+# Documentação do Projeto - Portfólio Pessoal
 
-Bem-vindo ao repositório do Portfólio Pessoal, um projeto desenvolvido com HTML e CSS puro. 
-Este projeto tem como objetivo apresentar informações sobre meu contato, formação acadêmica, experiência e projetos de forma simples e eficiente, 
-destacando técnicas básicas de estruturação de páginas web.
+Este repositório contém o código fonte do **Portfólio Pessoal**, um projeto desenvolvido utilizando **HTML5** e **CSS**. O objetivo deste projeto é apresentar uma estrutura básica de página web com foco em simplicidade, legibilidade e design minimalista.
 
-Estrutura do Projeto
+## Tecnologias Utilizadas
 
-O portfólio foi projetado para ser uma página inicial com seções claras e acessíveis. 
+- **HTML5**: Estruturação semântica e organização da página.
+- **CSS**: Estilização básica de elementos, incluindo cores e formatação simples.
 
-A estrutura principal é composta por:
+## Estrutura e Diagramação
 
-Index.html (pagina principal), Formação, Experiencia, Contato
+A estrutura do projeto foi construída de forma simples, utilizando tabelas, grids e `div` para organizar o conteúdo. As principais técnicas de diagramação e layout incluem:
 
-Todas as paginas possuem um cabeçalho com navegação
+- **Tabelas**: Utilizadas para organizar o cabeçalho e os links principais de navegação.
+- **Grids**: Implementação de grids simples para exibir imagens e informações de forma organizada.
+- **`div`**: Usadas para separar e estruturar diferentes seções da página.
+  - **Listas não Ordernadas**: Para pontuar na área dos estudos e separar os tópicos
+Esses recursos básicos foram escolhidos para garantir uma boa organização do conteúdo e uma navegação intuitiva.
 
-Utiliza uma tabela para organizar quatro links principais:
+## Estilização e Cores
 
-SOBRE MIM: Uma página para apresentar informações pessoais.
+A estilização do projeto foi feita com **CSS interno**, utilizando regras simples de formatação. Alguns dos principais estilos aplicados incluem:
 
-FORMAÇÃO: Descreve minha trajetória acadêmica.
+- **Cores simples**: Utilização de uma paleta de cores básica para garantir boa legibilidade e contraste.
+- **Gradientes**: Aplicação de gradientes simples em botões para dar um efeito visual agradável.
+- **Alinhamento de texto**: Uso de `text-align: justify` para garantir que os parágrafos principais fiquem bem distribuídos na página.
+- **Espaçamento e margens**: Configuração de margens e espaçamento para garantir uma distribuição equilibrada do conteúdo na tela.
 
-PROJETOS: Lista alguns dos projetos desenvolvidos.
+## Objetivo do Projeto
 
-CONTATO: Exibe formas de entrar em contato.
+O objetivo deste projeto é criar um portfólio pessoal simples, mas funcional, utilizando técnicas básicas de HTML5 e CSS. O portfólio é projetado para ser responsivo, acessível e fácil de navegar, com uma interface limpa e direta.
 
-Cada link leva a uma página HTML correspondente dentro da estrutura do projeto.
+## Estrutura do Projeto
 
-Design: Os botões possuem gradientes centrados (radial) com efeito visual para indicar o botão clicado.
+O projeto é composto pelas seguintes páginas:
 
-2. Conteúdo principal
+- **index.html**: Página principal que apresenta um resumo sobre mim, com links para outras seções.
+- **Formação**: Página que descreve minha trajetória acadêmica.
+- **Projetos**: Página que lista minha experiência em projetos práticos.
+- **Contato**: Página que exibe formas de entrar em contato.
 
-Um resumo introdutório apresenta informações gerais sobre mim, meu interesse por tecnologia e minha trajetória.
+Cada uma dessas páginas está organizada de maneira simples, com cabeçalhos e navegação clara, utilizando tabelas e `div` para organizar o conteúdo.
 
-O parágrafo principal está alinhado em formato justificado, seguindo boas práticas de legibilidade.
+## Conclusão
 
-3. Rodapé simples
+Este projeto é uma demonstração básica de como usar HTML5 e CSS para criar uma página web simples e funcional. O uso de tabelas, grids e `div` permite uma estruturação fácil, enquanto as técnicas de estilização básicas garantem uma aparência limpa e organizada.
 
-Exibe uma mensagem de direitos autorais no formato:
-
-&copy; 2024 Todos os direitos reservados, Ricardo Souza.
-
-Foi projetado com uma cor de fundo contrastante e fonte clara para leitura fácil.
-
-Técnicas Utilizadas
-
-Estruturação com HTML:
-
-Uso de tabelas para organização do cabeçalho.
-
-Uso de tags semânticas como <p> para textos principais e <footer> para rodapé.
-
-Estilização com CSS interno:
-
-Gradientes aplicados aos botões com radial-gradient.
-
-Efeitos de "botão clicado" usando box-shadow.
-
-Alinhamento justificado para textos principais com text-align: justify.
-
-Margens e espaçamento configurados para melhor distribuição do conteúdo.
-
-Agradeço sua visita ao meu portfólio! Sinta-se à vontade para explorar cada seção e conhecer mais sobre mim e meu trabalho.
-
+Agradeço pela visita ao meu portfólio e espero que você aproveite a experiência de navegar pelas páginas e conhecer mais sobre mim e meu trabalho.

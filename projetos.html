@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projetos - Ricardo Souza</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="media/experiencia.png">
+  <title>Projetos - Ricardo Souza</title>      <!-- padronizei todas as páginas com o nome da pagina seguida da bio -->
+  <link rel="icon" type="image/png" sizes="32x32" href="media/experiencia.png">      <!-- pgn do favicon da pagina -->
   <style>
-    /* Estilos globais */
+  /* CSS interno vai facilitar neste primeiro momento a ambientação com as modificações */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -15,7 +15,7 @@
       color: #333;
       text-align: center;
     }
-    table {
+    table {  /* estilo CSS das tabelas de fixas do cabeçalho */
       width: 100%;
       border-collapse: collapse;
       margin: 0;
@@ -28,10 +28,10 @@
       font-weight: bold;
       border-right: 1px solid white; /* Borda branca fina */
     }
-    td:last-child {
-      border-right: none; /* Remove a borda na última célula */
+    td:last-child { /* Remove a borda na última célula, criando a separação somente entre os botões */
+      border-right: none; 
     }
-    td a {
+    td a { /* formatação padrão para as celulas do menu fixo superior */
       text-decoration: none;
       color: white;
       display: block;
@@ -41,13 +41,13 @@
     td a:hover {
       background: radial-gradient(circle, #0056b3, #007BFF);
     }
-    /* Botão "clicado" */
-    #projetos a {
+  
+    #projetos a {  /* Botão "clicado" - cada página aberta indicará com uma cor diferente no menu qual sessão atual. */
       background: radial-gradient(circle, #0056b3, #003f7f);
       box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
-       /* Estilo do parágrafo */
-       p {
+      
+       p { /* formatação padrão para todos os parafragos, se preciso será inserido um CSS imbutido */
       margin: 20px auto;
       font-size: 18px;
       max-width: 900px;
@@ -55,14 +55,35 @@
       text-align: justify; /* Alinhamento justificado */
     }
 
-    /* Rodapé */
-    footer {
+    footer {     /* Rodapé em todas as páginas com copyright */
       background-color: #333;
       color: white;
       padding: 10px 0;
       margin-top: 20px;
       font-size: 14px;
     }
+    h2 {
+      font-size: 36px; /* Ajuste para um tamanho maior */
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      color: #333;
+      text-align: center;
+    }
+
+    h2::before { /* nos títulos h2 será aplicado um destaque 'estilo marca texto' */
+      content: '';
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      bottom: 1px;
+      top: -5px;
+      z-index: -1;
+      background: radial-gradient(circle, rgba(123, 153, 223, 0.74) 50%, transparent 130%);
+      filter: blur(3px);
+      transform: scale(1.05);
+    }
+
   </style>
 </head>
 <body>
@@ -71,28 +92,73 @@
     <tr>
       <td><a href="index.html">SOBRE MIM</a></td>                  <!-- cada botão leva para a página específica    -->
       <td><a href="formacao.html">FORMAÇÃO</a></td>                <!-- não existe botão 'voltar' toda pagina,      -->
-      <td id="projetos"><a href="projetos.html">PROJETOS</a></td>  <!-- funciona de forma direta e de forma simples -->
+      <td id="projetos"><a href="projetos.html">PORTFÓLIO</a></td>  <!-- funciona de forma direta e de forma simples -->
       <td><a href="contato.html">CONTATO</a></td>
     </tr>
   </table>
 
-  <h2>PROJETOS PESSOAIS</h2>
-  <h4>Alguns projetos desenvolvidos</h4>
-  <p>
-    Ao longo da graduação em Banco de Dados da UNINTER, foi possível explorar diversos projetos e colocar a mão na massa
-    em códigos práticos.
-    Foram desenvolvidos projetos em PYTHON, JAVA, HTML
-  </p>
-  <h4>Pesquisa e Desenvolvimento</h4>
-  <p>
-    Na Atividade Extensionista, realizei toda coleta e modelagem do banco de dados para uma aplicação web.
-    O Projeto "Vacina Conecta" cruza informações de cadastro pessoal, como idade, sexo, grupo de risco, localidade, entre
-    outras informações para trazer um mapa de vacinas por região.
-    Sendo possível analisar as vacinas já aplicadas e o calendário oficial local. 
-    Além de campanhas específicas por regiões.
+  <h2 style="text-align: center;">Projetos Pessoais</h2>
+<h4 style="text-align: center;">Alguns projetos desenvolvidos</h4>
+<div style="display: grid; grid-template-columns: repeat(2, 400px); gap: 20px; justify-content: center; align-items: center; text-align: center;">
 
-    Com todos os dados no sistema é de facil análise demografica onde podemos filtrar as vacinas por diversos fatores.
-  </p>
+<!-- com o recurso das div, foi criado um layout de duas imagens por vez, com o botão colorido indicando um link para o site-->
+
+  <div>
+    <a href="https://github.com/ricardo3355/cardapio_em_python" target="_blank">
+      <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;
+      ">Cardapio Python (UNINTER)</button> <!-- nome que aparece no botão de link -->
+    </a>
+    <br>
+    <img src="media/cardapio_python.png" alt="Imagem do projeto Cardapio Python" width="400" height="300">
+  </div>
+  <div>
+    <a href="https://github.com/ricardo3355/Mountain_Shooter" target="_blank">
+      <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;
+      ">Mountain Shooter (UNINTER)</button> <!-- nome que aparece no botão de link -->
+    </a>
+    <br>
+    <img src="media/mountain_shooter.png" alt="Imagem do projeto Mountain Shooter" width="400" height="300">
+  </div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, 400px); gap: 20px; justify-content: center; align-items: center; text-align: center;">
+  <div>
+    <a href="https://github.com/ricardo3355/rankeador-de-partidas-DIO" target="_blank">
+      <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;
+      ">Rankeador de Partidas (DIO)</button>
+    </a>
+    <br>
+    <img src="media/ranqueador.png" alt="Imagem do projeto Rankeador de Partidas" width="400" height="300">
+  </div>
+  <div>
+    <a href="https://github.com/ricardo3355/classificador-herois" target="_blank">
+      <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;
+      ">Classificador de Heroi (DIO)</button>
+    </a>
+    <br>
+    <img src="media/classificador.jpg" alt="Imagem do projeto Classificador de Heroi" width="400" height="300">
+  </div>
+</div>
+
+<h4 style="text-align: center;">Pesquisa e Desenvolvimento</h4>
+<div style="display: grid; grid-template-columns: repeat(2, 400px); gap: 20px; justify-content: center; align-items: center; text-align: center;">
+  <div>
+    <a href="https://github.com/ricardo3355/vacina_conecta" target="_blank">
+      <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;
+      ">Projeto Vacina Conecta (PROJETO UNINTER)</button>
+    </a>
+    <br>
+    <img src="media/vacina_site.jpg" alt="Imagem do projeto Vacina Conecta" width="400" height="300">
+  </div>
+  <div>
+    <a href="https://github.com/ricardo3355/vacina_conecta" target="_blank">
+      <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;
+      ">Mais imagens do site (PROJETO UNINTER)</button>
+    </a>
+    <br>
+    <img src="media/vacina.png" alt="Imagem do projeto Vacina Conecta" width="400" height="300">
+  </div>
+</div>
 
   <br><br>
 

@@ -11,7 +11,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #ffffff;
+      background-color: #f4f4f4;
       color: #333;
       text-align: center; 
     }
@@ -65,36 +65,36 @@
     }
 
     h2 {
-  font-size: 36px; /* Ajuste para um tamanho maior */
-  font-weight: bold;
-  position: relative;
-  display: inline-block;
-  color: #333;
-  text-align: center;
-}
+      font-size: 36px; /* Ajuste para um tamanho maior */
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      color: #333;
+      text-align: center;
+    }
 
-h2::before { /* nos títulos h2 será aplicado um destaque 'estilo marca texto' */
-  content: '';
-  position: absolute;
-  left: -5px;
-  right: -5px;
-  bottom: 1px;
-  top: -5px;
-  z-index: -1;
-  background: radial-gradient(circle, rgba(123, 153, 223, 0.74) 50%, transparent 130%);
-  filter: blur(3px);
-  transform: scale(1.05);
-}
+    h2::before { /* nos títulos h2 será aplicado um destaque 'estilo marca texto' */
+      content: '';
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      bottom: 1px;
+      top: -5px;
+      z-index: -1;
+      background: radial-gradient(circle, rgba(123, 153, 223, 0.74) 50%, transparent 130%);
+      filter: blur(3px);
+      transform: scale(1.05);
+    }
 
   </style>
 </head>
 <body>
 
-  <table>   <!-- menu fixo de navegação criado com uma tabela -->
+  <table>  <!-- menu fixo de navegação criado com uma tabela -->
     <tr>
       <td id="sobre-mim"><a href="index.html">SOBRE MIM</a></td>   <!-- cada botão leva para a página específica    -->
       <td><a href="formacao.html">FORMAÇÃO</a></td>                <!-- não existe botão 'voltar' toda pagina,      -->
-      <td><a href="projetos.html">PROJETOS</a></td>                <!-- funciona de forma direta e de forma simples -->
+      <td><a href="projetos.html">PORTFÓLIO</a></td>                <!-- funciona de forma direta e de forma simples -->
       <td><a href="contato.html">CONTATO</a></td>
     </tr>
   </table>
